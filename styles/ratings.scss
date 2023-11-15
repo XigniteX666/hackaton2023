@@ -1,0 +1,44 @@
+.ais-RatingMenu-link {
+  align-items: center;
+  display: flex;
+}
+
+.ais-RatingMenu-item {
+  cursor: pointer;
+  padding-bottom: 1rem;
+}
+
+.ais-Menu-item--selected {
+  font-weight: bold;
+}
+
+.ais-RatingMenu-starIcon--full {
+  fill: rgb(255, 126, 0);
+}
+
+.ais-RatingMenu-starIcon--empty {
+  fill: rgba(0, 0, 0, 0.08);
+}
+
+.ais-RatingMenu-starIcon {
+  height: 20px;
+  margin-right: 0.5rem;
+  width: 20px;
+}
+
+.ais-RatingMenu-item:not(.ais-RatingMenu-item--selected) {
+  opacity: 0.5;
+}
+
+.ais-RatingMenu-count {
+  align-items: center;
+  background-color: rgba(65, 66, 71, 0.08);
+  border-radius: 4px;
+  color: rgba(33, 36, 61, 0.8);
+  display: flex;
+  font-size: 0.64rem;
+  font-weight: 600;
+  letter-spacing: 1.1px;
+  margin-left: 8px;
+  padding: 0 4px;
+}

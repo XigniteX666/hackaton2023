@@ -1,0 +1,15 @@
+trigger:
+  - "main"
+  - "refs/tags/*"
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+  - script: |
+      npm install --global vercel
+      vercel pull --yes --environment=production --token=$(VERCEL_TOKEN_HACKATON)
+      vercel build --prod --token=$(VERCEL_TOKEN_HACKATON) 
+      vercel deploy --prebuilt --prod  --archive=tgz --token=$(VERCEL_TOKEN_HACKATON)
+
+    displayName: "vercel build and deploy"
